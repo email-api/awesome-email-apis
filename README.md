@@ -29,7 +29,7 @@ Hosted HTTP APIs aimed at application email (send + typically webhooks/logs).
 
 - [Amazon SES](https://aws.amazon.com/ses/) — AWS email sending service; low unit cost at scale; you assemble DX (logging, webhooks, domain UX) yourself. New accounts may face production access delays.
 - [Mailgun](https://www.mailgun.com/) — Developer email API with sending, inbound routes, and validation products.
-- [Notify](https://notify.cx) — Minimal transactional email API (send, domain auth, logs, webhooks). Clients: `fetch`, [`notifycx`](https://www.npmjs.com/package/notifycx), [`notifycx-mcp`](https://notify.cx/mcp). Source: [notifycx/notifycx](https://github.com/notifycx/notifycx).
+- [Notify](https://notify.cx) — Minimal transactional email API (send, domain auth, logs, webhooks). Clients: `fetch`, [`notifycx`](https://github.com/notifycx/notifycx) SDK, [`notifycx-mcp`](https://notify.cx/mcp). Source: [notifycx/notifycx](https://github.com/notifycx/notifycx).
 - [Postmark](https://postmarkapp.com/) — Transactional-focused email API known for deliverability tooling and message streams.
 - [Resend](https://resend.com/) — Modern developer email API; Node/React Email–oriented DX; broader product surface than send-only APIs.
 - [SendGrid](https://sendgrid.com/) — Twilio email platform; transactional + marketing in one ESP-style product.

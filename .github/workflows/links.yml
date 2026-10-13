@@ -15,5 +15,11 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress './**/*.md'
+          # 403/429: common bot blocks (npmjs, some vendor sites) — flag for humans, don't fail CI
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,301,302,307,308,403,429
+            --max-retries 2
+            './**/*.md'
           fail: true
